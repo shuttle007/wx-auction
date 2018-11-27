@@ -1,0 +1,92 @@
+<view wx:if="{{!userInfo}}">
+	<!--此处布局按照图片来设置-->
+	<view class="container">
+		<view class="image-wrapper">
+			<image style="width:750rpx;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1542275237530&di=ba502ea7f781058958329c032afb9e02&imgtype=0&src=http%3A%2F%2Fpic8.photophoto.cn%2F20080902%2F0034034572231132_b.jpg" />
+		</view>
+		<view class="inform-wrapper">
+			马上登录开启高效记账
+			<view class="iconfont icon-arrowdown"></view>
+		</view>
+		<!--<view class="login-form">
+			<input placeholder="手机号" class="" />
+			<input placeholder="验证码" /><button bindtap="getMessageCode">获取验证码</button>
+		</view>-->
+
+		<!--<van-cell-group>
+			<van-field value="{{ tel }}" clearable label="手机号" placeholder="请输入手机号" bind:click-icon="onClickIcon" error-message="" />
+			<van-field value="{{ sms }}" center clearable label="短信验证码" placeholder="请输入短信验证码" border="{{ false }}" use-button-slot>
+				<van-button slot="button" size="small" type="primary">发送验证码</van-button>
+			</van-field>
+		</van-cell-group>-->
+		<view class="container" style="margin: 20rpx 0;">
+			<van-button type="default" bindtap="onTapLogin1">登录</van-button>
+		</view>
+		<view class="container">
+			<van-button type="primary" open-type="getUserInfo" bindgetuserinfo="onTapLogin2">
+				微信用户快速登录
+			</van-button>
+		</view>
+	</view>
+</view>
+<view class="user-card" wx:else>
+	<view class="authorization-confirm" wx:if="{{showConfirm}}">
+		用户已拒绝，请重新授权
+	</view>
+	<!--<van-toast id="van-toast" />-->
+	<view class="user-info">
+		<!--bindtap='navToAuctions'-->
+		<image class="user-head" src="{{userInfo.avatarUrl}}" bindtap="signOut"></image>
+		<text class="user-name">{{userInfo.nickName}}，您好！</text>
+		<view class="user-location" bindtap="getWeather">{{weather}}</view>
+	</view>
+	<!--<view class="container">
+		<view>{{motto1}}</view>
+		<view>{{motto2}}</view>
+		<view class="auction-num">当前您有{{num}}个标的</view>
+		<view v-else>您还没有收入进账！</view>
+		<view v-if="profit > 0">总收入:{{profit}}元</view>
+	</view>-->
+
+	<view class="container">
+		<!--<view class="none-auction" wx:if="{{!userInfo}}">请登录</view>-->
+		<view class="none-auction" wx:if="{{items.length == 0}}">暂无标的</view>
+
+		<view class="auctions-wrapper" wx:if="{{items.length > 0}}">
+			<view class="auction-num">当前您有{{num}}个标的</view>
+
+			<view wx:for="{{items}}" wx:key="index" wx:for-item="item">
+				<!--<i-action-sheet visible="{{ item.visible }}" actions="{{ item.actions2 }}" data-item="{{item}}" show-cancel bind:cancel="handleCancelDel" bind:click="handleConfirmDel" mask-closable="{{ true }}">
+					<view slot="header" style="padding: 16px">
+						<view style="color: #444;font-size: 16px">确定吗？</view>
+						<text>删除后无法恢复哦</text>
+					</view>
+				</i-action-sheet>-->
+				<!--<i-swipeout i-class="i-swipeout-demo-item" actions="{{item.actions}}" bindtap="actionsTap" data-item="{{item}}" unclosable="{{true}}" toggle="{{item.toggle}}">
+					<view slot="content">-->
+				<view class="auction-item" bindtap="navToAuction" data-id="{{item.auction_id}}">
+					<view class="auction-item-date">
+						<view class='auction-item-date-wrapper'>
+							<view class='auction-item-date-year'>{{item.create_year}}</view>
+							<view class='auction-item-date-day'>{{item.create_month +"-"+ item.create_day}}</view>
+						</view>
+					</view>
+					<view class="auction-item-detail">
+						<view class="auction-item-sum">成交价格：{{item.price}}元</view>
+						<view class="auction-item-amount">成交总量：{{item.amount}}吨</view>
+					</view>
+					<view class="auction-item-btn">
+						<view class="iconfont icon-more" data-id="{{item.auction_id}}"></view>
+					</view>
+				</view>
+				<!--</view>
+				</i-swipeout>-->
+			</view>
+		</view>
+
+		<view class="auction-add" bindtap="navToAddAuction">
+			<view class="iconfont icon-add"></view>
+			添加新标的
+		</view>
+	</view>
+</view>

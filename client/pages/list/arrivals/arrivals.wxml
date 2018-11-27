@@ -1,0 +1,9 @@
+<view class="list-wrapper">
+	<view wx:for="{{items}}" wx:for-item="item" wx:key="index" class="companies-wrapper" bindtap="navToArrivalMore" data-id="{{item.id}}">
+		<view class="item-company">{{item.company}}
+		</view>
+		<view class="item-more">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,19 @@
+<view class="detail-wrapper">
+	<view class="item-wrapper">
+		<view class="item-title">回款时间</view>
+		<view class="item-detail">{{item.date}}</view>
+	</view>
+	<view class="item-wrapper">
+		<view class="item-title">来源公司</view>
+		<view class="item-detail">{{item.company}}</view>
+	</view>
+	<view class="item-wrapper">
+		<view class="item-title">回款金额</view>
+		<view class="item-detail">{{item.sum}}元</view>
+	</view>
+	<!-- 编辑和删除 -->
+	<view class='edit-del-wrapper'>
+		<view class='edit-btn' bindtap='navToEdit'>编辑</view>
+		<view class='delete-btn' bindtap="showDelModal">删除</view>
+	</view>
+</view>

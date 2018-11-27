@@ -1,0 +1,59 @@
+page {
+  display: block;
+  min-height: 100%;
+  background-color: rgb(245, 245, 247);
+  font-size: 46rpx;
+}
+  
+.add-wrapper {
+	padding-top: 30rpx;
+	overflow: hidden;
+	/* background: rgb(210, 237, 255); */
+	position: relative;
+}
+
+.add-item {
+	width: 750rpx;
+	height: 110rpx;
+	margin-bottom: 30rpx;
+	background: #fff;
+	overflow: hidden;
+}
+
+.add-tit,.add-section,.add-unit,.add-rule{
+	height: 110rpx;
+	line-height: 110rpx;
+	background: #fff;
+}
+
+.add-tit {
+  float: left;
+  width: 140rpx;
+  padding: 0 100rpx 0 20rpx;
+  text-align: center;
+}
+
+.add-section {
+  width: 300rpx;
+  float: left;
+  text-align: left;
+}
+.add-rule{
+	color:#ddd;
+}
+.add-section input {
+	height: 110rpx;
+	display: block;
+	background: #fff;
+	color: #ddd;
+}
+.add-save {
+  width: 100%;
+  height: 120rpx;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  line-height: 120rpx;
+  background: #3396fb;
+  color: #fff;
+}

@@ -1,0 +1,32 @@
+<view class="add-wrapper">
+	<!-- date -->
+	<view class="add-date-item index_picker">
+		<picker mode="date" value="{{pickDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindChange">
+			<text class="add-tit">支出时间</text>
+			<view class="add-section">{{ pickDate }}</view>
+			<view class="add-unit">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</picker>
+	</view>
+	<!-- truck_source -->
+	<view class="add-item-header">车辆来源</view>
+	<view class="add-item" bindtap="navToTruckSources">
+		<view class="add-section">
+			<text>{{item.ts}}</text>
+		</view>
+		<view class="add-unit">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+	<view class='item-info' v-if="item.truck_source != '请选择'">已选{{truck_num}}车</view>
+	<!-- sum -->
+	<view class="add-item-line">
+		<text class="add-tit">支出运费（元）</text>
+		<view class="add-section">
+			<input placeholder="请输入" v-model="item.sum" />
+		</view>
+	</view>
+	<!-- 保存按钮 -->
+	<view class="add-save" bindtap="saveAdd">保存</view>
+</view>

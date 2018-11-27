@@ -1,0 +1,70 @@
+page {
+		display: block;
+		min-height: 100%;
+		background-color: rgb(245, 245, 247);
+		font-size: 46rpx;
+	}
+	
+	.detail-wrapper {
+		overflow: hidden;
+		position: relative;
+	}
+	
+	.item-header {
+		height: 80rpx;
+		line-height: 80rpx;
+		padding-left: 3%;
+	}
+	
+	.item-wrapper {
+		height: 120rpx;
+		line-height: 120rpx;
+		border-bottom: 1px solid #ddd;
+		background: #fff;
+	}
+	
+	.item-detail,
+	.item-title {
+		float: left;
+	}
+	
+	.item-title {
+		width: 200rpx;
+		padding-left: 20rpx;
+		text-align: left;
+	}
+	
+	.item-detail {
+		width: 500rpx;
+		color: rgb(129, 129, 129);
+		padding-right: 30rpx;
+		text-align: right;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+	
+	.edit-del-wrapper {
+		width: 730rpx;
+		height: 120rpx;
+		position: fixed;
+		bottom: 20rpx;
+		text-align: center;
+		line-height: 120rpx;
+		padding: 0 20rpx;
+	}
+	
+	.edit-btn {
+		float: left;
+		width: 345rpx;
+		color: #fff;
+		margin-right: 20rpx;
+		background: rgb(89, 226, 96);
+	}
+	
+	.delete-btn {
+		float: left;
+		width: 345rpx;
+		color: #fff;
+		background: rgb(250, 124, 124);
+	}

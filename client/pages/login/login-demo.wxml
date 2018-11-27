@@ -1,0 +1,10 @@
+<view class="container">
+		<view class="image-wrapper">
+			<image src=""/>
+		</view>
+		<button class="login-wrapper" open-type="getUserInfo">
+			<text class='iconfont icon-weixin login-button'></text>  微信用户快速登录
+		</button>
+		<view class="login-text" bindtap="navToLogin2">输入手机号码登录/注册</view>
+		<!--<button bindtap="getRealLocation">获取地理位置</button>-->
+	</view>

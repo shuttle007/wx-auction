@@ -1,0 +1,11 @@
+<view class="container">
+	<view class="image-wrapper">
+		<image src="" />
+	</view>
+	<!-- <button class="login-wrapper login-tel" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber1">手机号一键登录
+	</button> -->
+	<button class="login-wrapper login-wxid" open-type="getUserInfo" bindtap="onTapLogin">微信账号登录
+	</button>
+	<button class="login-wrapper login-message" bindtap="getPhoneNumber2">短信验证登录
+	</button>
+</view>

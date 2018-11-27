@@ -1,0 +1,6 @@
+<view class="edit-wrapper">
+	<view class="item-wrapper">
+		<input type="text" class="item-input" v-model="value" auto-focus />
+	</view>
+	<view class="edit-save" bindtap="saveEdit">完成</view>
+</view>

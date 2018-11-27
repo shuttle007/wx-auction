@@ -1,0 +1,71 @@
+<view class="add-wrapper">
+	<view class="add-date-item index_picker">
+		<picker mode="date" value="{{pickDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindChange">
+			<text class="add-tit">出库时间</text>
+			<view class="add-section">{{ pickDate }}</view>
+			<view class="add-unit">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</picker>
+	</view>
+	<view class="add-item-header">去向单位</view>
+	<view class="add-item" bindtap="navToCompanies">
+		<view class="add-section">{{item.company}}</view>
+		<view class="add-unit">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+	<view class="add-item-line">
+		<view class='add-tit'>运费单价（元/吨）</view>
+		<view class="add-section">
+			<input placeholder="请输入" type="number" bindinput="bindUnitPriceInput" />
+		</view>
+	</view>
+	<view class="add-item-line">
+		<view class='add-tit'>装货吨数（吨）</view>
+		<view class="add-section">
+			<input placeholder="请输入" type="number" bindinput="bindAmountInput" />
+		</view>
+	</view>
+	<view class="add-item-license">
+		<view class='add-tit'>车牌号码</view>
+		<view class='add-license'>
+			<!--<picker bindchange="bindProvinceChange" value="{{index}}" range="{{array}}">
+				<view class="picker">
+					<view class='add-section-province'>{{province[index]}}
+						<view class='iconfont icon-triangle'></view>
+					</view>
+				</view>
+			</picker>
+			<picker bindchange="bindAlphaChange" value="{{index}}" range="{{array}}">
+				<view class="picker">
+					<view class='add-section-province'>{{alpha[index]}}
+						<view class='iconfont icon-triangle'></view>
+					</view>
+				</view>
+			</picker>-->
+			<picker mode="multiSelector" bindchange="bindMultiPickerChange" value="{{multiIndex}}" range="{{licenseArr}}">
+				<view class="picker">
+					<view class='add-section-province'>{{licenseArr[0][multiIndex[0]]}}{{licenseArr[1][multiIndex[1]]}}
+						<view class='iconfont icon-triangle'></view>
+					</view>
+				</view>
+			</picker>
+		</view>
+		<view class='add-section'>
+			<input class='add-section-input' placeholder="请输入车牌号" type="number" bindinput="bindTruckLisenceInput" />
+		</view>
+	</view>
+	<view class="add-item-header">车辆来源</view>
+	<view class="add-item" bindtap="navToTruckSources">
+		<view class="add-section">
+			<!--<view>{{item.truck_source}}</view>-->
+			<view>{{item.ts}}</view>
+		</view>
+		<view class="add-unit">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+	<!-- 保存按钮 -->
+	<view class="add-save" bindtap="saveAdd">保存</view>
+</view>

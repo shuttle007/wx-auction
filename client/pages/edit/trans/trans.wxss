@@ -1,0 +1,71 @@
+page {
+	display: block;
+	min-height: 100%;
+	background-color: rgb(245, 245, 247);
+	font-size: 46rpx;
+}
+
+.edit-wrapper {
+	padding-top: 30rpx;
+	overflow: hidden;
+	position: relative;
+}
+
+.edit-item {
+	width: 750rpx;
+	height: 120rpx;
+	margin-bottom: 30rpx;
+	background: #fff;
+	overflow: hidden;
+}
+
+.edit-item .item-tit,
+.edit-item .item-section,
+.edit-item .item-unit {
+	display: block;
+	height: 120rpx;
+	line-height: 120rpx;
+}
+
+.edit-item .item-tit {
+	width: 330rpx;
+	float: left;
+	padding-left: 20rpx;
+	text-align: left;
+}
+
+.edit-item .item-section {
+	float: left;
+	color: #868686;
+	width: 330rpx;
+	text-align: right;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+
+.edit-item .item-unit {
+	width: 60rpx;
+	float: left;
+	text-align: center;
+}
+
+.item-unit {
+	float: right;
+	width: 80rpx;
+}
+
+.icon-date {
+	font-size: 20px;
+}
+
+.edit-save {
+	width: 100%;
+	height: 120rpx;
+	position: fixed;
+	bottom: 0;
+	text-align: center;
+	line-height: 120rpx;
+	background: #3396fb;
+	color: #fff;
+}

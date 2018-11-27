@@ -1,0 +1,10 @@
+<view class="list-wrapper">
+	<view wx:for="{{items}}" wx:key="index" wx:for-item="item" class='item-wrapper' bindtap='navToDetail' data-id="{{item.id}}">
+		<view class='item-license'>{{item.license}}</view>
+		<view class='item-amount'>卸：{{item.after_amount}}吨</view>
+		<view class='item-date'>{{item.date}}</view>
+		<view class="item-more">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+</view>

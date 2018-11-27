@@ -1,0 +1,22 @@
+<view class='trucks-wrapper'>
+  <block class="list" wx:for="{{items}}" wx:key='index'>
+    <view class="item-wrapper" bindtap='toggleSelect' data-id="{{index}}">
+      <view class='item-detail'>
+        <view class='item-one'>
+          <view class='item-one-license'>{{item.date}}</view>
+          <view class='item-one-before'>{{item.truck_license}}</view>
+        </view>
+        <view class='item-two'>
+          <view class='item-two-date'>装{{item.beforeAmount}}吨</view>
+          <view class='item-two-after'>卸{{item.afterAmount}}吨</view>
+        </view>
+      </view>
+      <view class="item-checkbox">
+        <view class="iconfont {{item.checked?'icon-checked-true':'icon-checked-false'}}">
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<!-- 已选 -->
+<view class="add-save" bindtap="saveAdd" hidden="{{num==0}}"><text style='font-size:30rpx'>(已选{{num}}车)</text> 确认</view>

@@ -1,0 +1,35 @@
+<view class="add-wrapper">
+	<view class="add-date-item index_picker">
+		<picker mode="date" value="{{pickDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindChange">
+			<text class="add-tit">到货时间</text>
+			<view class="add-section">{{ pickDate }}</view>
+			<view class="add-unit">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</picker>
+	</view>
+	<!-- company -->
+	<view class="add-item-header">到货单位</view>
+	<view class="add-item" bindtap="navToCompanies">
+		<view class="add-section">{{item.company}}</view>
+		<view class="add-unit">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+	<!-- amount -->
+	<view class="add-item-line">
+		<view class='add-tit'>卸货吨数（吨）</view>
+		<view class="add-section">
+			<input placeholder="请输入" v-model="item.amount" />
+		</view>
+	</view>
+	<!-- unitprice -->
+	<view class="add-item-line">
+		<view class='add-tit'>卖出单价（元/吨）</view>
+		<view class="add-section">
+			<input placeholder="请输入" v-model="item.unitprice" />
+		</view>
+	</view>
+	<!-- 保存按钮 -->
+	<view class="add-save" bindtap="saveAdd">保存</view>
+</view>

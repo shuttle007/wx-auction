@@ -1,0 +1,119 @@
+page {
+	display: block;
+	min-height: 100%;
+	background-color: rgb(245, 245, 247);
+}
+
+.filter-wrapper {
+	height: 140rpx;
+	background: rgb(240, 247, 248);
+	color: rgb(68, 74, 86);
+}
+
+.filter-date,
+.filter-title {
+	float: left;
+	height: 140rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.filter-date {
+	width: 250rpx;
+	padding-top: 20rpx;
+}
+
+.filter-title {
+	width: 350rpx;
+	line-height: 140rpx;
+}
+
+.filter-others {
+	float: left;
+	height: 140rpx;
+	width: 130rpx;
+	padding-left: 20rpx;
+	overflow: hidden;
+	text-align: center;
+}
+
+.filter-others-search {
+	float: left;
+	width: 95rpx;
+	height: 140rpx;
+	line-height: 140rpx;
+	text-align: center;
+}
+
+
+/* .filter-others-dateplus{
+    float: left;
+    width: 95rpx;
+    height: 140rpx;
+    line-height: 140rpx;
+    text-align: center;
+} */
+
+.icon-search,
+.icon-date {
+	font-size: 26px;
+}
+
+.list-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.item-wrapper {
+	overflow: hidden;
+}
+
+.date-wrapper {
+	height: 100rpx;
+	padding-left: 30rpx;
+	background: #3396fb;
+	line-height: 100rpx;
+	color: #fff;
+}
+
+.expends-wrapper {
+	height: 100rpx;
+	line-height: 100rpx;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.item-type {
+	float: left;
+	width: 45%;
+	padding-left: 5%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.item-sum {
+	float: left;
+	width: 40%;
+}
+
+.item-icon {
+	float: left;
+	width: 10%;
+}
+
+
+/* 遮罩层 */
+
+.mask {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: #999;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	opacity: 0.5;
+}

@@ -1,0 +1,86 @@
+page {
+	display: block;
+	min-height: 120%;
+	background-color: rgb(245, 245, 247);
+	font-size: 40rpx;
+}
+
+.filter-wrapper {
+	height: 140rpx;
+	background: rgb(240, 247, 248);
+	color: rgb(68, 74, 86);
+}
+
+.filter-date,
+.filter-title {
+	float: left;
+	height: 140rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	box-sizing: border-box;
+}
+
+.filter-date {
+	width: 250rpx;
+	padding-top: 20rpx;
+}
+
+.filter-title {
+	width: 350rpx;
+	line-height: 140rpx;
+}
+
+.filter-others {
+	float: left;
+	height: 140rpx;
+	width: 130rpx;
+	padding-left: 20rpx;
+	overflow: hidden;
+	text-align: center;
+}
+
+.filter-others-search {
+	float: left;
+	width: 95rpx;
+	height: 140rpx;
+	line-height: 140rpx;
+	text-align: center;
+}
+
+.icon-search,
+.icon-date {
+	font-size: 26px;
+}
+
+.list-wrapper {
+	width: 100%;
+	overflow: hidden;
+}
+
+.ckf-wrapper {
+	overflow: hidden;
+}
+
+.ckf-wrapper {
+	height: 120rpx;
+	line-height: 120rpx;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+
+.item-date {
+	float: left;
+	width: 45%;
+	padding-left: 5%;
+}
+
+.item-sum {
+	float: left;
+	width: 40%;
+}
+
+.item-icon {
+	float: left;
+	width: 10%;
+}

@@ -1,0 +1,29 @@
+<view class="filter-wrapper">
+	<view class="filter-date" bindtap="showDatePicker">
+		<view class="filter-date-year">{{filters.year}}年</view>
+		<view class="filter-date-month">
+			{{filters.month}}月
+			<view class="iconfont icon-select"></view>
+		</view>
+	</view>
+	<view class="filter-title" bindtap="showTypeModal">
+		<view class="filter-title-text">
+			全部来源
+			<view class="iconfont icon-select"></view>
+		</view>
+	</view>
+	<view class="filter-others">
+		<view class="filter-others-search">
+			<view class="iconfont icon-search"></view>
+		</view>
+	</view>
+</view>
+<view class="list-wrapper">
+	<view wx:for="{{items}}" wx:key="index" wx:for-item="item" class="ckf-wrapper" bindtap="navToDetail" data-id="{{item.id}}">
+		<view class="item-date">{{item.date}}</view>
+		<view class="item-sum">费用：{{item.sum}}元</view>
+		<view class='item-icon' bindtap="navToCKFDetail">
+			<view class='iconfont icon-more'></view>
+		</view>
+	</view>
+</view>

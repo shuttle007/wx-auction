@@ -1,0 +1,40 @@
+<view class="container" wx:if="{{!price}}">
+	<i-spin fix></i-spin>
+</view>
+<view wx:else>
+	<view class='info-wrapper'>
+		<view class='info-top'>
+			<view class='auction-price'>
+				<text class='iconfont icon-auction'></text>{{price}}元
+			</view>
+			<!-- 贴水贴杂 -->
+			<view class='waterin-wrapper' bindtap="navToEditWaterIn">
+				贴水贴杂{{waterin}}个
+			</view>
+		</view>
+		<!-- 出库信息 -->
+		<view class='hasout-wrapper'>
+			<text class='hasout-tit'>已出库 {{trans_now}} 吨（可出库 {{trans_all}} 吨）</text>
+			<view class='hasout-pro'>
+				<view class="progress-item">
+					<!--<progress percent="{{20 / trans_all}}" stroke-width="22" active color="#43c2d9" />-->
+					<i-progress percent="{{percent}}" stroke-width="16" status="active"></i-progress>
+				</view>
+			</view>
+		</view>
+	</view>
+
+	<view class='transport-wrapper'>
+		<view class='left-wrapper' bindtap='navToAddTrans'>出库</view>
+		<view class='right-wrapper' bindtap='navToAddArrival'>到货</view>
+	</view>
+	<view class='account-wrapper'>
+		<view class='left-wrapper' bindtap='showTypeModal'>
+			<text class='iconfont icon-account-out'></text>费用
+		</view>
+		<view class='right-wrapper' bindtap='navToAddIncome'>
+			<text class='iconfont icon-account-in'></text>回款
+		</view>
+	</view>
+	<view class='detail-wrapper' bindtap='navToAuctionDetail'>查看详情</view>
+</view>

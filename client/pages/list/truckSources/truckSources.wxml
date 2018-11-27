@@ -1,0 +1,8 @@
+<view wx:for="{{trucksources}}" wx:for-item="item" wx:key="index" class="item" bindtap='navBack' data-name="{{item.name}}" data-phone="{{item.phone}}">
+	<view class="item-name"> {{item.name}}</view>
+	<view class="item-phone">{{item.phone}}</view>
+</view>
+<view class='add-new' bindtap='navToAddTruckSource'>
+	<!-- 添加新的车辆来源 -->
+	<view class='iconfont icon-add'></view>添加新车辆来源
+</view>

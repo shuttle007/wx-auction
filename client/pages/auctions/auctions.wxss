@@ -1,0 +1,88 @@
+page {
+	display: block;
+	min-height: 100%;
+	background-color: rgb(245, 245, 247);
+	position: relative;
+	padding-top: 30rpx;
+}
+
+.auctions-wrapper {
+	overflow: hidden;
+}
+
+.auction-item {
+	width: 750rpx;
+	height: 200rpx;
+	margin-bottom: 30rpx;
+	position: relative;
+	color: #fff;
+	background: rgb(68, 74, 86);
+	display: flex;
+	flex-direction: row;
+	box-shadow: rgb(144, 157, 182) 3rpx 3rpx 10rpx;
+}
+
+.auction-item-date {
+	flex: 0 1 120rpx;
+	height: 130rpx;
+	padding-top: 25rpx;
+	padding-left: 25rpx;
+}
+
+.auction-item-date-wrapper {
+	height: 130rpx;
+	line-height: 60rpx;
+	text-align: center;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+}
+
+.auction-item-date-year {
+	font-size: 34rpx;
+}
+
+.auction-item-date-day {
+	font-size: 42rpx;
+}
+
+.auction-item-detail {
+	flex-grow: 1;
+	padding-left: 50rpx;
+	text-align: left;
+	padding-top: 20rpx;
+	height: 140rpx;
+	line-height: 70rpx;
+	font-size: 40rpx;
+}
+
+.auction-item-btn {
+	flex: 0 1 80rpx;
+	height: 200rpx;
+	line-height: 200rpx;
+}
+
+
+/* 添加标的按钮 */
+
+.auction-add {
+	width: 100%;
+	height: 120rpx;
+	background: #3396fb;
+	color: #fff;
+	line-height: 120rpx;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	font-size: 46rpx;
+}
+
+.auction-add .icon-add {
+	position: absolute;
+	left: 160rpx;
+	height: 120rpx;
+	line-height: 120rpx;
+}
+
+.icon-add {
+	font-size: 46rpx;
+}

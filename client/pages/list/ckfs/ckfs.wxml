@@ -1,0 +1,32 @@
+<view class="filter-wrapper">
+	<picker mode="multiSelector" bindchange="changeYearAndMonth" value="{{multiIndex}}" range="{{YearsAndMonths}}">
+		<view class="picker">
+			<view class="filter-date">
+				<view class="filter-date-year">{{YearsAndMonths[0][multiIndex[0]]}}年</view>
+				<view class="filter-date-month">{{YearsAndMonths[1][multiIndex[1]]}}月
+					<text class="iconfont icon-select"></text>
+				</view>
+			</view>
+		</view>
+	</picker>
+	<view class="filter-title" bindtap="showTypeModal">
+		<!--<view class="filter-title-text">
+			全部来源
+			<text class="iconfont icon-select"></text>
+		</view>-->
+	</view>
+	<view class="filter-others">
+		<view class="filter-others-search">
+			<view class="iconfont icon-search"></view>
+		</view>
+	</view>
+</view>
+<view class="list-wrapper">
+	<view wx:for="{{items}}" wx:key="index" wx:for-item="item" class="ckf-wrapper" bindtap="navToDetail" data-id="{{item.id}}">
+		<view class="item-date">{{item.date}}</view>
+		<view class="item-sum">费用：{{item.sum}}元</view>
+		<view class='item-icon' bindtap="navToCKFDetail">
+			<view class='iconfont icon-more'></view>
+		</view>
+	</view>
+</view>

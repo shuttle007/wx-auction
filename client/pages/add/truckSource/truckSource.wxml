@@ -1,0 +1,18 @@
+<view class="add-wrapper">
+    <!-- 姓名 -->
+    <view class="add-item">
+        <text class="add-tit">姓名</text>
+        <view class="add-section">
+            <input placeholder="必填" value="{{truckSourceInfo.tsn}}" />
+        </view>
+    </view>
+    <!-- 手机 -->
+    <view class="add-item">
+        <text class="add-tit">手机</text>
+        <view class="add-section">
+            <input placeholder="可不填" value="{{truckSourceInfo.tsp}}" />
+        </view>
+    </view>
+    <!-- 保存按钮 -->
+    <view class="add-save" bindtap="saveAddTruckSource">保存</view>
+</view>

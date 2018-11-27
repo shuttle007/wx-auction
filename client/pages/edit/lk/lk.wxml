@@ -1,0 +1,18 @@
+<view class="edit-wrapper">
+	<view class="edit-item" bindtap="showDatePicker">
+		<view class="item-tit">缴纳时间</view>
+		<view class="item-section">{{item.date}}</view>
+		<view class="item-unit">
+			<view class="iconfont icon-more"></view>
+		</view>
+	</view>
+	<view class="edit-item" bindtap='navToEdit' data-param="{{item.sum}}">
+		<view class="item-tit">缴纳金额（元）</view>
+		<view class="item-section">{{item.sum}}</view>
+		<view class='item-unit'>
+			<view class='iconfont icon-more'></view>
+		</view>
+	</view>
+	<!-- 保存按钮 -->
+	<view class="edit-save" bindtap="saveEdit">保存</view>
+</view>

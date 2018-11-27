@@ -1,0 +1,23 @@
+<view class="container">
+	<view class="auctions-wrapper">
+		<view wx:for="{{auctions}}" wx:key="index" wx:for-item="item" class="auction-item" bindtap="navToAuction">
+			<view class="auction-item-date">
+				<view class='auction-item-date-wrapper'>
+					<view class='auction-item-date-year'>{{item.c_date_year}}</view>
+					<view class='auction-item-date-day'>{{(item.c_date_month>=10? item.c_date_month:"0"+item.c_date_month) +"-"+ item.c_date_day}}</view>
+				</view>
+			</view>
+			<view class="auction-item-detail">
+				<view class="auction-item-sum">成交价格：{{item.price}}元</view>
+				<view class="auction-item-amount">成交总量：{{item.amount}}吨</view>
+			</view>
+			<view class="auction-item-btn">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</view>
+	</view>
+	<view class="auction-add" bindtap="navToAddAuction">
+		<view class="iconfont icon-add"></view>
+		添加新的标的
+	</view>
+</view>

@@ -1,0 +1,7 @@
+{
+	"navigationBarTitleText": "标的正文",
+	"usingComponents": {
+		"i-spin": "../../dist/spin/index",
+		"i-progress": "../../dist/progress/index"
+	}
+}

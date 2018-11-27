@@ -1,0 +1,35 @@
+<view class="add-wrapper">
+	<!-- date -->
+	<view class="add-date-item index_picker">
+		<picker mode="date" value="{{pickDate}}" start="{{startDate}}" end="{{endDate}}" bindchange="bindChange">
+			<text class="add-tit">成交时间</text>
+			<view class="add-section">{{ pickDate }}</view>
+			<view class="add-unit">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</picker>
+	</view>
+	<!-- price -->
+	<view class="add-item-line">
+		<text class="add-tit">成交金额（元）</text>
+		<view class="add-section">
+			<input placeholder="请输入" type="number" bindinput="bindPriceInput"/>
+		</view>
+	</view>
+	<!-- amount -->
+	<view class="add-item-line">
+		<view class='add-tit'>成交总量（吨）</view>
+		<view class="add-section">
+			<input placeholder="请输入" type="number" bindinput="bindAmountInput" />
+		</view>
+	</view>
+	<!-- waterin -->
+	<view class="add-item-line">
+		<text class="add-tit">贴水贴杂（个）</text>
+		<view class="add-section">
+			<input placeholder="请输入" type="number" bindinput="bindWaterinInput" />
+		</view>
+	</view>
+	<!-- 保存按钮 -->
+	<view class="add-save" bindtap="saveAdd">保存</view>
+</view>

@@ -1,0 +1,120 @@
+page {
+		font-size: 46rpx;
+	}
+	.info-wrapper {
+		width: 670rpx;
+		margin: 30rpx auto;
+		height: 400rpx;
+		background: #3f4d62;
+		box-shadow: 2px 2px 3px #5f718d;
+		color: #dfe5ec;
+		margin-bottom: 40rpx;
+	}
+	
+	.info-top {
+		overflow: hidden;
+		height: 150rpx;
+		line-height: 150rpx;
+	}
+	
+	.auction-price {
+		height: 155rpx;
+		line-height: 155rpx;
+		color: #dfe5ec;
+		float: left;
+		padding: 0 45rpx 0 65rpx;
+	}
+	
+	.auction-price .icon-auction {
+		margin-right: 10rpx;
+	}
+	
+	.waterin-wrapper {
+		float: left;
+		height: 80rpx;
+		line-height: 80rpx;
+		margin-top: 35rpx;
+		padding: 0 20rpx;
+		border: 4rpx solid #dfe5ec;
+		font-size: 38rpx;
+	}
+	
+	.hasout-wrapper {
+		font-size: 42rpx;
+		text-align: center;
+		width: 600rpx;
+		margin: 0 auto;
+		margin-bottom: 0;
+		border-top: 2rpx solid #dfe5ec;
+		padding-top: 40rpx;
+	}
+	
+	.hasout-wrapper .hasout-pro {
+		margin-top: 40rpx;
+		/* padding:20rpx 0rpx; */
+	}
+	
+	.detail-wrapper {
+		width: 670rpx;
+		margin: 40rpx auto;
+		font-size: 48rpx;
+		text-align: center;
+		height: 150rpx;
+		line-height: 150rpx;
+		overflow: hidden;
+		margin-bottom: 40rpx;
+		color: #fff;
+		background: #d44a5f;
+		box-shadow: 1px 1px 3px #e2bdbd;
+	}
+	
+	.transport-wrapper,
+	.account-wrapper {
+		height: 150rpx;
+		line-height: 150rpx;
+		text-align: center;
+		width: 670rpx;
+		margin: 0 auto;
+		color: #fff;
+		font-size: 50rpx;
+	}
+	
+	.transport-wrapper {
+		margin-bottom: 40rpx;
+	}
+	
+	.left-wrapper,
+	.right-wrapper {
+		float: left;
+		height: 150rpx;
+		line-height: 150rpx;
+	}
+	
+	.left-wrapper {
+		width: 320rpx;
+		margin-right: 30rpx;
+	}
+	
+	.right-wrapper {
+		width: 320rpx;
+	}
+	
+	.transport-wrapper .left-wrapper {
+		background: #1a567d;
+	}
+	
+	.transport-wrapper .right-wrapper {
+		background: #157e69;
+	}
+	
+	.account-wrapper .left-wrapper {
+		background: #823a16;
+	}
+	
+	.account-wrapper .right-wrapper {
+		background: #63440e;
+	}
+	
+	.iconfont {
+		margin-right: 10rpx;
+	}

@@ -1,0 +1,32 @@
+page {
+	display: block;
+	min-height: 100%;
+	font-size: 46rpx;
+	background-color: rgb(245, 245, 247);
+}
+
+.list-wrapper {
+	margin-top: 30rpx;
+	width: 100%;
+	overflow: hidden;
+}
+.companies-wrapper{
+	overflow:hidden;
+	background: #fff;
+	border-bottom: 1px solid #ddd;
+}
+.item-company {
+	float: left;
+	height: 120rpx;
+	line-height: 120rpx;
+	padding-left:5%;
+	width:75%;
+}
+
+.item-more {
+	float: left;
+	width: 20%;
+	text-align: center;
+	height: 120rpx;
+	line-height: 120rpx;
+}

@@ -1,0 +1,12 @@
+.para {
+	display: block;
+	padding: 30rpx;
+	font-size: 34rpx;
+}
+
+.checkbox {
+	margin-top: 20rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}

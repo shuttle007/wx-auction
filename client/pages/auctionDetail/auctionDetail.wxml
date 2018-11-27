@@ -1,0 +1,46 @@
+<view>
+	<view class="payed-wrapper">
+		<view class="current-profit">当前利润：{{profit}}元</view>
+		<!--<view class="current-freight">已付运费：{{freight_payed}}元</view>-->
+	</view>
+	<i-row>
+		<i-col span="8" i-class="col-class" bindtap='navToTransList'>
+			<view class="text-center">全部出库</view>
+		</i-col>
+		<i-col span="8" i-class="col-class" bindtap='navToUnFreightList'>
+			<view class="text-center">待付运费</view>
+		</i-col>
+		<i-col span="8" i-class="col-class" bindtap="navToUnincomeList">
+			<view class="text-center">待回款</view>
+		</i-col>
+	</i-row>
+	<i-cell-group>
+		<i-cell title="" slot="icon" is-link url="/pages/index/index" i-class="i-cell-bd">
+			<i-icon type="activity" size="24" color="#80848f" /> 杂费记录
+		</i-cell>
+	</i-cell-group>
+	<view class="list-wrapper">
+		<!-- 杂费记录 -->
+		<view class="item-wrapper" bindtap="navToExpendList">
+			<!-- <view class="item-icon">
+           <view class="iconfont icon-expend"></view>
+       </view> -->
+			<i-icon type="activity" size="28" color="#80848f" />
+			<view class="item-tit">
+				<text>杂费记录</text>
+			</view>
+			<view class="item-more">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</view>
+		<!-- 出库费记录 -->
+		<view class="item-wrapper" bindtap="navToCKFList">
+			<view class="item-tit">
+				<text>出库费记录 </text>
+			</view>
+			<view class="item-more">
+				<view class="iconfont icon-more"></view>
+			</view>
+		</view>
+	</view>
+</view>

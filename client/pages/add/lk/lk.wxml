@@ -1,0 +1,11 @@
+<view class="add-wrapper">
+	<!-- sum -->
+	<view class="add-item-line">
+		<view class='add-tit'>缴粮款（元）</view>
+		<view class="add-section">
+			<input placeholder="请输入" v-model="item.sum" />
+		</view>
+	</view>
+	<!-- 保存按钮 -->
+	<view class="add-save" bindtap="saveAdd">保存</view>
+</view>
